@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tannu Kumari — Frontend Developer</title>
+<meta name="description" content="Portfolio of Tannu Kumari, frontend developer and CS undergraduate specializing in graphics &amp; visualization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-field" id="gridField" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="#home" class="mark">TK</a>
+  <nav class="topnav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <p class="hero-kicker">Frontend Developer — B.Tech CSE, Graphics &amp; Visualization</p>
+      <h1>Tannu<br>Kumari</h1>
+      <p class="hero-lede">
+        I build clean, considered interfaces, grounded in a computer science foundation
+        that spans machine learning, data, and visual systems. Currently studying Computer
+        Graphics &amp; Visualization at Sikkim Manipal Institute of Technology.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="hero-frame">
+        <img src="assets/tannu-photo.jpg" alt="Portrait of Tannu Kumari" onerror="this.parentElement.classList.add('img-fallback')">
+      </div>
+      <svg class="hero-plot" viewBox="0 0 200 200" aria-hidden="true">
+        <polyline points="0,150 30,120 55,135 80,80 110,95 140,40 170,60 200,20" />
+        <circle cx="140" cy="40" r="3.5"></circle>
+      </svg>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <div class="about-body">
+      <div class="about-text">
+        <p>
+          I'm a Computer Science undergraduate at Sikkim Manipal Institute of Technology,
+          specializing in Graphics &amp; Visualization, currently maintaining an 8.9 CGPA.
+          My work sits at the intersection of interface craft and applied machine learning —
+          I care about how systems look and feel to use, and about the reasoning that makes
+          them work underneath.
+        </p>
+        <p>
+          Over the past two years I've worked on natural-language and security-focused ML
+          systems, including a research internship at NIT Patna where I helped build a
+          real-time SMS-phishing detection system. That experience shaped how I approach
+          frontend work too: start from the real constraints, design for clarity, and
+          validate everything before it ships.
+        </p>
+      </div>
+      <div class="about-facts">
+        <div class="fact-block">
+          <h3>Education</h3>
+          <p class="fact-title">B.Tech, CSE — Graphics &amp; Visualization</p>
+          <p class="fact-sub">Sikkim Manipal Institute of Technology · 2023–2027</p>
+          <p class="fact-sub">CGPA 8.9 / 10</p>
+        </div>
+        <div class="fact-block">
+          <h3>Experience</h3>
+          <p class="fact-title">Research Intern, NIT Patna</p>
+          <p class="fact-sub">May – Jul 2025</p>
+        </div>
+        <div class="fact-block">
+          <h3>Recognition</h3>
+          <p class="fact-sub">Runner-up, UI/UX Hackathon — Tech Adrista '24</p>
+          <p class="fact-sub">3rd place, Smart India Hackathon 2024</p>
+          <p class="fact-sub">Oracle Certified — AI Foundations Associate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul class="chips">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Python</li><li>C / C++</li><li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Platforms</h3>
+        <ul class="chips">
+          <li>Git</li><li>GitHub</li><li>VS Code</li><li>MongoDB</li><li>MySQL</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Machine Learning</h3>
+        <ul class="chips">
+          <li>Scikit-learn</li><li>PyTorch</li><li>Pandas</li><li>NumPy</li><li>TF-IDF</li><li>XGBoost</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p class="section-note">Aug 2024 — Apr 2026</p>
+    </div>
+    <div class="project-list">
+
+      <article class="project">
+        <p class="project-date">Aug 2024 — Apr 2026</p>
+        <h3>Language-Aware Hybrid Sentiment Analysis</h3>
+        <p>
+          A hybrid sentiment-classification system for Twitter data that handles English and
+          multilingual text in the same pipeline. Automatic language detection routes English
+          posts to BERTweet and multilingual posts to XLM-RoBERTa, with combined predictions
+          for mixed-language input — fine-tuned and evaluated across accuracy, precision,
+          recall, F1, and confusion matrix.
+        </p>
+        <ul class="chips chips-tight">
+          <li>Python</li><li>PyTorch</li><li>Hugging Face Transformers</li><li>Scikit-learn</li><li>NLTK</li>
+        </ul>
+        <a href="https://github.com/artwithtannu" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project">
+        <p class="project-date">May — Jul 2025</p>
+        <h3>Smishing Detection using Machine Learning</h3>
+        <p>
+          An on-device SMS phishing (smishing) detector built on TF-IDF features and classical
+          ML models. Trained SVM, Random Forest, and Logistic Regression classifiers reaching
+          up to 99% accuracy, with oversampling to correct class imbalance and stronger
+          robustness against obfuscated attacks.
+        </p>
+        <ul class="chips chips-tight">
+          <li>Python</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li>
+        </ul>
+        <a href="https://github.com/artwithtannu" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <h2>Get in touch</h2>
+      <p class="section-note">Open to frontend development roles, internships, and collaborations.</p>
+    </div>
+
+    <div class="contact-body">
+      <div class="contact-links">
+        <a href="mailto:tk301839@gmail.com">Email <span>tk301839@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/tannu-kumari-0ab984257" target="_blank" rel="noopener">LinkedIn <span>in/tannu-kumari</span></a>
+        <a href="https://github.com/artwithtannu" target="_blank" rel="noopener">GitHub <span>artwithtannu</span></a>
+        <a href="https://leetcode.com/u/Tanvi_309/" target="_blank" rel="noopener">LeetCode <span>Tanvi_309</span></a>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Tannu Kumari — built &amp; deployed as a frontend developer portfolio.</p>
+  <p>© <span id="year"></span></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
